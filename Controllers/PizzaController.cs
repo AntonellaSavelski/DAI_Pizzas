@@ -37,22 +37,14 @@ namespace Pizzas.API.Controllers
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, Pizza pizza){
-            int nuevaPizza;
-            string sql = "UPDATE Pizzas SET Nombre = @pNombre, LibreGluten = @pLibreGluten, Importe = @pImporte, Descripcion = @pDescripcion WHERE id = @pId";
-            using (SqlConnection db = basededatos.GetConnection()){
-               nuevaPizza = db.Execute(sql, new {pId= id, pNombre=pizza.Nombre, pLibreGluten=pizza.LibreGluten, pImporte=pizza.Importe, pDescripcion=pizza.Descripcion});
-            } 
-            return Ok(pizza);
+        
+            return Ok(PizzasServices.Update(pizza));
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteById(int id){
-            Pizza pizzaABorrar;
-            string sql = "DELETE from Pizzas WHERE id = @pId";
-            using (SqlConnection db = basededatos.GetConnection()){
-               pizzaABorrar = db.QueryFirstOrDefault<Pizza>(sql, new {pId = id});
-            } 
-            return Ok(pizzaABorrar);
+            
+            return Ok(PizzasServices.DeleteById(pizzaABorrar));
         }
 
     }
