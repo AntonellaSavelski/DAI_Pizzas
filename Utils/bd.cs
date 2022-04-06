@@ -1,10 +1,13 @@
 using System.Data.SqlClient;
 using Dapper;
+using System.Linq;
+using System.Collections.Generic;
+using Pizzas.API.Models;
 
-namespace Pizzas.API.Controllers
+namespace Pizzas.API.Utils
 {
-    public class basededatos {
-        public static sqlConnection GetConnection(){
+    public static class basededatos {
+        public static SqlConnection GetConnection(){
             SqlConnection db;
             string connectionString;
 

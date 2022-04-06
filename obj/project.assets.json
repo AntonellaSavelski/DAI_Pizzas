@@ -557,11 +557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admision\\Downloads\\Pizza-main\\Pizza-main\\Pizzas.API-master\\Pizzas.API.csproj",
+      "projectUniqueName": "C:\\Users\\admision\\Desktop\\DAI\\DAI_Pizzas\\Pizzas.API.csproj",
       "projectName": "Pizzas.API",
-      "projectPath": "C:\\Users\\admision\\Downloads\\Pizza-main\\Pizza-main\\Pizzas.API-master\\Pizzas.API.csproj",
+      "projectPath": "C:\\Users\\admision\\Desktop\\DAI\\DAI_Pizzas\\Pizzas.API.csproj",
       "packagesPath": "C:\\Users\\admision\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admision\\Downloads\\Pizza-main\\Pizza-main\\Pizzas.API-master\\obj\\",
+      "outputPath": "C:\\Users\\admision\\Desktop\\DAI\\DAI_Pizzas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admision\\AppData\\Roaming\\NuGet\\NuGet.Config",
