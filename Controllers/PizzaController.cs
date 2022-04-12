@@ -20,7 +20,7 @@ namespace Pizzas.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return Ok (PizzasServices.GetAll(_ListadoPizzas));
+            return Ok(PizzasServices.GetAll(_ListadoPizzas));
         }
 
         [HttpGet("{id}")]
